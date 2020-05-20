@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
-	let day = date.getDay();
+	let day = date.getDate();
 	res.render('list', { kindOfDay: day, newListItems: items });
 });
 
